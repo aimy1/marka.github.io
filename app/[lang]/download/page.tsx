@@ -16,7 +16,17 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: "
   };
 }
 
-const getPlatforms = (lang: string, dict: Record<string, any>) => [
+interface DownloadDict {
+  download: {
+    os: {
+      macOS: string;
+      Windows: string;
+      Linux: string;
+    };
+  };
+}
+
+const getPlatforms = (lang: string, dict: DownloadDict) => [
   {
     iconName: "apple" as const,
     name: "macOS",
