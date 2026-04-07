@@ -3,6 +3,10 @@ import { Github, Heart, Feather } from "lucide-react";
 import { Reveal, RevealGroup } from "@/components/Reveal";
 import { getDictionary } from "@/lib/get-dictionary";
 
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "zh" }];
+}
+
 export async function generateMetadata({ params: { lang } }: { params: { lang: "en" | "zh" } }): Promise<Metadata> {
   const dict = await getDictionary(lang);
   return {

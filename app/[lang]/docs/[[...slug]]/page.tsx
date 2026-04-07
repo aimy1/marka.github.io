@@ -9,6 +9,21 @@ interface Props {
   params: Promise<{ lang: "en" | "zh"; slug?: string[] }>;
 }
 
+export async function generateStaticParams() {
+  const { getAllDocItems } = await import("@/lib/docs");
+  const enDocs = getAllDocItems("en").map((item) => ({
+    lang: "en",
+    slug: [item.slug],
+  }));
+  const zhDocs = getAllDocItems("zh").map((item) => ({
+    lang: "zh",
+    slug: [item.slug],
+  }));
+  
+  // Also include the root /docs paths for each language
+  return [...enDocs, ...zhDocs, { lang: "en", slug: [] }, { lang: "zh", slug: [] }];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang, slug } = await params;
   const slugStr = slug?.[0] ?? "";

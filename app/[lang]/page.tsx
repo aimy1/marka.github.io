@@ -5,6 +5,10 @@ import { UseCases } from "@/sections/UseCases";
 import { CtaSection } from "@/sections/CtaSection";
 import { getDictionary } from "@/lib/get-dictionary";
 
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "zh" }];
+}
+
 export default async function HomePage({
   params: { lang },
 }: {
