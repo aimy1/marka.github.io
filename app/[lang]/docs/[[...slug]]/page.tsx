@@ -80,11 +80,12 @@ function renderMarkdownToHtml(content: string): string {
   });
   html = html.replace(/^(\|[-:]+[-| :]*\|)$/gm, "");
   html = html.replace(
-    /(<tr>.*?<\/tr>\n?)+/gs,
+    /(<tr>[\s\S]*?<\/tr>\n?)+/g,
     (match) => {
-      const rows = match.match(/<tr>.*?<\/tr>/gs) || [];
-      if (rows.length === 0) return match;
-      const header = rows[0].replace(/<td/g, '<th class="px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 text-left"').replace(/<\/td>/g, "</th>");
+      const rows = match.match(/<tr>[\s\S]*?<\/tr>/g) || [];
+      const firstRow = rows[0];
+      if (!firstRow) return match;
+      const header = firstRow.replace(/<td/g, '<th class="px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 text-left"').replace(/<\/td>/g, "</th>");
       const body = rows.slice(1).join("\n");
       return `<div class="overflow-x-auto my-6 rounded-xl border border-zinc-200 dark:border-zinc-800"><table class="w-full border-collapse"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     }
