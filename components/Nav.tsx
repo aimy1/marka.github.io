@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Globe } from "lucide-react";
+import { Menu, X, Github } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
@@ -64,6 +64,8 @@ export function Nav({ lang, dict }: NavProps) {
               <img
                 src="/images/markd.logo.jpg"
                 alt="Marka Logo"
+                width={28}
+                height={28}
                 className="object-cover w-full h-full"
               />
             </div>

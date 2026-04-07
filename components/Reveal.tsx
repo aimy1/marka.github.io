@@ -3,7 +3,6 @@
 import { useInView } from "framer-motion";
 import { useRef, ReactNode } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 interface RevealProps {
   children: ReactNode;

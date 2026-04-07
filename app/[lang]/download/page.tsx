@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Download } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
-import { Reveal, RevealGroup } from "@/components/Reveal";
+import { Reveal } from "@/components/Reveal";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PlatformGrid } from "@/components/PlatformGrid";
 
@@ -13,7 +12,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: "
   };
 }
 
-const getPlatforms = (lang: string, dict: any) => [
+const getPlatforms = (lang: string, dict: Record<string, any>) => [
   {
     iconName: "apple" as const,
     name: "macOS",

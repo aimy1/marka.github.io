@@ -4,8 +4,8 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Search, X } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { DocSection } from "@/lib/docs";
+import { cn } from "@/lib/utils";
 
 interface DocsSidebarProps {
   lang: "en" | "zh";
@@ -65,7 +65,7 @@ export function DocsSidebar({ lang, docsData, dict }: DocsSidebarProps) {
         {query && (
           <div className="mb-4 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 overflow-hidden shadow-md group">
             {searchResults.length === 0 ? (
-              <p className="px-4 py-3 text-xs text-zinc-400">{dict.noResults} "{query}"</p>
+              <p className="px-4 py-3 text-xs text-zinc-400">{dict.noResults} &quot;{query}&quot;</p>
             ) : (
               <ul>
                 {searchResults.slice(0, 6).map((item) => (
