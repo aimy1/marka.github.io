@@ -1,7 +1,7 @@
 "use client";
 
 import { Reveal, RevealGroup } from "@/components/Reveal";
-import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/Card";
 import { Zap, Shield, MousePointer2, Palette, Database, Command } from "lucide-react";
 
 interface FeaturesProps {
