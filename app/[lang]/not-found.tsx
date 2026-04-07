@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function NotFound() {
   const pathname = usePathname();
@@ -16,7 +17,7 @@ export default function NotFound() {
     }
   }, [pathname]);
 
-  const dict = {
+  const dict = ({
     en: {
       title: "Page not found",
       description: "We can't find what you're looking for. It might have moved or never existed.",
@@ -29,15 +30,17 @@ export default function NotFound() {
       goHome: "回首页",
       readDocs: "查看文档"
     }
-  }[lang];
+  } as const)[lang];
 
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-4 text-center">
       <div className="mb-8">
         <div className="relative w-16 h-16 rounded-2xl overflow-hidden shadow-lg shadow-accent/20 mx-auto mb-6">
-          <img
+          <Image
             src="/images/markd.logo.jpg"
             alt="Marka Logo"
+            width={64}
+            height={64}
             className="object-cover w-full h-full"
           />
         </div>

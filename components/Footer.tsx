@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Image from "next/image";
+
 interface FooterProps {
   lang: "en" | "zh";
   dict: {
@@ -21,9 +23,11 @@ export function Footer({ lang, dict }: FooterProps) {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3 w-fit group">
               <div className="relative w-7 h-7 rounded-lg overflow-hidden shadow-sm shadow-accent/10 group-hover:shadow-accent/30 transition-shadow duration-200">
-                <img
+                <Image
                   src="/images/markd.logo.jpg"
                   alt="Marka Logo"
+                  width={28}
+                  height={28}
                   className="object-cover w-full h-full"
                 />
               </div>

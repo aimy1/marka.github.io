@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Github, Download } from "lucide-react";
 import { fadeUp, staggerContainer } from "@/lib/motion";
+import Image from "next/image";
 
 interface HeroProps {
   lang: "en" | "zh";
@@ -111,18 +112,23 @@ export function Hero({ lang, dict }: HeroProps) {
         <div className="relative rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-2xl shadow-zinc-200/60 dark:shadow-zinc-950/80 overflow-hidden group">
           {/* Light Mode Image */}
           <div className="block dark:hidden">
-            <img
+            <Image
               src="/images/marka.white.png"
               alt="Marka Interface Light Mode"
+              width={1280}
+              height={720}
               className="w-full h-auto object-cover"
+              priority
             />
           </div>
           
           {/* Dark Mode Image */}
           <div className="hidden dark:block">
-            <img
+            <Image
               src="/images/marka.black.png"
               alt="Marka Interface Dark Mode"
+              width={1280}
+              height={720}
               className="w-full h-auto object-cover"
             />
           </div>

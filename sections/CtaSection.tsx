@@ -3,6 +3,7 @@
 import { Download, Github } from "lucide-react";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
+import Image from "next/image";
 
 interface CtaSectionProps {
   lang: "en" | "zh";
@@ -28,9 +29,11 @@ export function CtaSection({ lang, dict }: CtaSectionProps) {
             <div className="relative">
               {/* Icon */}
               <div className="relative mx-auto w-14 h-14 rounded-2xl overflow-hidden shadow-lg shadow-accent/20 mb-6 group-hover:shadow-accent/40 transition-shadow duration-500">
-                <img
+                <Image
                   src="/images/markd.logo.jpg"
                   alt="Marka Logo"
+                  width={56}
+                  height={56}
                   className="object-cover w-full h-full"
                 />
               </div>

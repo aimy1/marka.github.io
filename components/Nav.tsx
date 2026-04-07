@@ -8,6 +8,8 @@ import { Menu, X, Github } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
+import Image from "next/image";
+
 interface NavProps {
   lang: "en" | "zh";
   dict: {
@@ -61,7 +63,7 @@ export function Nav({ lang, dict }: NavProps) {
           {/* Logo */}
           <Link href={`/${lang}`} className="flex items-center gap-2 group">
             <div className="relative w-7 h-7 rounded-lg overflow-hidden shadow-sm shadow-accent/20 group-hover:shadow-accent/40 transition-shadow duration-200">
-              <img
+              <Image
                 src="/images/markd.logo.jpg"
                 alt="Marka Logo"
                 width={28}
