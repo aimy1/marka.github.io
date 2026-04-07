@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 250 250;
+    --foreground: 10 10 10;
+    --border: 228 228 231;
+    --muted: 113 113 122;
+    --muted-bg: 244 244 245;
+    --card: 255 255 255;
+    --card-border: 228 228 231;
+  }
+
+  .dark {
+    --background: 17 17 27;
+    --foreground: 248 249 250;
+    --border: 42 42 48;
+    --muted: 147 153 178;
+    --muted-bg: 24 24 37;
+    --card: 24 24 37;
+    --card-border: 42 42 48;
+  }
+
+  * {
+    @apply border-zinc-200 dark:border-zinc-800;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-accent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300 dark:bg-zinc-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-400 dark:bg-zinc-600;
+  }
+}
+
+@layer components {
+  .prose-marka {
+    @apply text-zinc-700 dark:text-zinc-300 leading-relaxed;
+  }
+
+  .prose-marka h1,
+  .prose-marka h2,
+  .prose-marka h3,
+  .prose-marka h4 {
+    @apply text-zinc-900 dark:text-zinc-50 font-semibold tracking-tight;
+  }
+
+  .prose-marka h1 { @apply text-3xl mt-8 mb-4; }
+  .prose-marka h2 { @apply text-2xl mt-8 mb-3 border-b border-zinc-200 dark:border-zinc-800 pb-2; }
+  .prose-marka h3 { @apply text-xl mt-6 mb-2; }
+
+  .prose-marka p { @apply mb-4; }
+
+  .prose-marka a {
+    @apply text-accent hover:text-accent-hover underline underline-offset-2 transition-colors;
+  }
+
+  .prose-marka code {
+    @apply bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  .prose-marka pre {
+    @apply bg-zinc-950 rounded-xl overflow-x-auto my-6 border border-zinc-800;
+  }
+
+  .prose-marka pre code {
+    @apply bg-transparent p-0 text-zinc-100;
+  }
+
+  .prose-marka blockquote {
+    @apply border-l-4 border-accent/40 pl-4 italic text-zinc-500 dark:text-zinc-400 my-4;
+  }
+
+  .prose-marka ul { @apply list-disc pl-6 mb-4 space-y-1; }
+  .prose-marka ol { @apply list-decimal pl-6 mb-4 space-y-1; }
+
+  .prose-marka table {
+    @apply w-full border-collapse my-6;
+  }
+
+  .prose-marka th {
+    @apply bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-left font-semibold text-sm border border-zinc-200 dark:border-zinc-700;
+  }
+
+  .prose-marka td {
+    @apply px-4 py-2 text-sm border border-zinc-200 dark:border-zinc-700;
+  }
+
+  .prose-marka img {
+    @apply rounded-xl my-6 max-w-full;
+  }
+
+  .prose-marka hr {
+    @apply border-zinc-200 dark:border-zinc-800 my-8;
+  }
+
+  /* Syntax highlight container */
+  .shiki {
+    @apply p-5 text-sm leading-relaxed overflow-x-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .gradient-text {
+    @apply bg-gradient-to-r from-zinc-900 to-zinc-600 dark:from-zinc-100 dark:to-zinc-400 bg-clip-text text-transparent;
+  }
+  .card-border {
+    @apply border border-zinc-200 dark:border-zinc-800;
+  }
+  .surface {
+    @apply bg-white dark:bg-zinc-900;
+  }
+}

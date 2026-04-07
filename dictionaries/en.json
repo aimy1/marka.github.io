@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "home": "Home",
+    "docs": "Docs",
+    "download": "Download",
+    "about": "About",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "v3.3.7 now available",
+    "headlineMain": "Write without",
+    "headlineAccent": "distraction.",
+    "subheadline": "Marka is a Markdown editor that gets out of your way. Real-time preview, synchronized scrolling, and a minimal interface built for deep work.",
+    "ctaDownload": "Download Free",
+    "ctaGithub": "View on GitHub",
+    "footer": "Free and open source · macOS · Windows · Linux"
+  },
+  "features": {
+    "title": "Everything you need. Nothing you don't.",
+    "subtitle": "Stop fighting your tools. Marka provides a focused environment designed for the craft of writing.",
+    "items": [
+      { "title": "Real-time Preview", "desc": "See your rendered Markdown instantly as you type, perfectly synchronized." },
+      { "title": "Minimal UI", "desc": "No sidebars, no toolbars, no distractions. Just you and your words." },
+      { "title": "Sync Scroll", "desc": "Edit and preview areas stay perfectly aligned, even with complex documents." },
+      { "title": "Flexible Themes", "desc": "Choose from curated themes like Catppuccin, or create your own custom style." },
+      { "title": "Local First", "desc": "Your data is yours. Files are stored locally in plain Markdown format." },
+      { "title": "Keyboard Driven", "desc": "Full command palette and customizable shortcuts for an efficient workflow." }
+    ]
+  },
+  "editorShowcase": {
+    "title": "The most intuitive editing experience.",
+    "subtitle": "Type on the left, see the magic on the right. Synchronized perfectly for your flow.",
+    "markdown": "Markdown",
+    "preview": "Preview",
+    "placeholder": "# Welcome to Marka\n\n**Write** without distraction.\n\n- Real-time preview\n- Synchronized scroll\n- Minimal UI\n\n> The best editor is one you forget."
+  },
+  "useCases": {
+    "title": "Built for every kind of writer.",
+    "items": [
+      { "title": "Technical Writing", "desc": "Write documentation and blog posts with full syntax highlighting support." },
+      { "title": "Creative Work", "desc": "A clean canvas for your stories, scripts, and notes without floating menus." },
+      { "title": "Knowledge Management", "desc": "Organize your thoughts in plain Markdown files that last forever." }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to write better?",
+    "subtitle": "Download Marka and experience what it feels like when your editor finally just gets out of the way.",
+    "download": "Download for Free",
+    "github": "Star on GitHub",
+    "footer": "Free forever · Open source · No account required"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "We can't find what you're looking for. It might have moved or never existed.",
+    "goHome": "Go home",
+    "readDocs": "Read the docs"
+  },
+  "download": {
+    "badge": "v3.3.7 — Latest Release",
+    "title": "Download Marka",
+    "subtitle": "Free and open source. Available for all major operating systems. No account, no telemetry.",
+    "recommended": "Recommended",
+    "changelogTitle": "Recent Updates",
+    "viewAllReleases": "View all releases on GitHub",
+    "os": {
+      "macOS": "macOS 12 or later",
+      "Windows": "Windows 10/11 (64-bit)",
+      "Linux": "Ubuntu 20.04+ / Debian"
+    }
+  },
+  "about": {
+    "title": "About Marka",
+    "headline": "Built for the craft of writing.",
+    "subheadline": "Marka was born from a desire for clarity. We wanted an environment where software fades into the background, leaving only you and your thoughts.",
+    "valuesTitle": "What we believe",
+    "timelineTitle": "How we got here",
+    "quote": "Reduce distractions. Let writing be what it should be.",
+    "manifesto": "The Marka manifesto",
+    "openSourceTitle": "Open source",
+    "openSourceDesc": "Marka is open source under the MIT License. We believe good software should be transparent, auditable, and community-driven.",
+    "footer": "Made with ❤️ by the Marka team"
+  },
+  "docs": {
+    "search": "Search documentation...",
+    "noResults": "No results found for",
+    "previous": "Previous",
+    "next": "Next",
+    "onThisPage": "On this page"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "navigation": {
+    "home": "首页",
+    "docs": "文档",
+    "download": "下载",
+    "about": "关于",
+    "getStarted": "立即体验"
+  },
+  "hero": {
+    "badge": "v3.3.7 现已发布",
+    "headlineMain": "让写作",
+    "headlineAccent": "重归本质。",
+    "subheadline": "Marka 是一款极简的 Markdown 编辑器，实时预览、同步滚动，为深度创作而生。",
+    "ctaDownload": "免费下载",
+    "ctaGithub": "GitHub 开源",
+    "footer": "开源免费 · 支持 macOS · Windows · Linux"
+  },
+  "features": {
+    "title": "少即是多，分秒必争。",
+    "subtitle": "停止与复杂的工具博弈。Marka 为写作者提供一个纯净、高效的创作环境。",
+    "items": [
+      { "title": "实时预览", "desc": "打字的同时即刻渲染，预览与编辑区完美同步。" },
+      { "title": "极简 UI", "desc": "无侧方栏、无工具栏、零干扰。只有你和你的文字。" },
+      { "title": "同步滚动", "desc": "即使面对超长文档，编辑区与预览区也能保持精准对齐。" },
+      { "title": "优雅主题", "desc": "内置精选主题（如 Catppuccin），同时也支持完全自定义样式。" },
+      { "title": "本地优先", "desc": "你的数据归你所有。文件以纯文本 Markdown 格式存储在本地。" },
+      { "title": "快捷键驱动", "desc": "全功能命令面板与自定义快捷键，让你的工作流快如闪电。" }
+    ]
+  },
+  "editorShowcase": {
+    "title": "直觉化的编辑体验。",
+    "subtitle": "左边输入，右边魔法。为你流畅的灵感完美同步。",
+    "markdown": "源码编辑",
+    "preview": "实时预览",
+    "placeholder": "# 欢迎使用 Marka\n\n**让写作** 回归本质。\n\n- 实时渲染（所见即所得）\n- 编辑与预览同步滚动\n- 无干扰极简界面\n\n> 最好的工具是让你忘记它的存在。"
+  },
+  "useCases": {
+    "title": "为每一位写作者打造。",
+    "items": [
+      { "title": "技术写作", "desc": "专为技术文档与博客优化，支持全功能的代码高亮。" },
+      { "title": "创意创作", "desc": "为你的小说、脚本和随笔提供纯净画布，告别漂浮菜单。" },
+      { "title": "知识管理", "desc": "用通用的 Markdown 格式组织你的思想，让知识永久沉淀。" }
+    ]
+  },
+  "ctaSection": {
+    "title": "准备好开始写作了吗？",
+    "subtitle": "立即下载 Marka，开启沉浸式创作体验，让灵感随笔尖自由流淌。",
+    "download": "免费下载",
+    "github": "在 GitHub 上关注",
+    "footer": "永久免费 · 开放源代码 · 无需注册账号"
+  },
+  "download": {
+    "badge": "v3.3.7 — 最新稳定版",
+    "title": "下载 Marka",
+    "subtitle": "开源且免费。支持所有主流操作系统。无账号追踪，无隐私采集。",
+    "recommended": "推荐下载",
+    "changelogTitle": "更新日志",
+    "viewAllReleases": "在 GitHub 查看所有版本",
+    "os": {
+      "macOS": "macOS 12 或更高版本",
+      "Windows": "Windows 10/11 (64位)",
+      "Linux": "Ubuntu 20.04+ / Debian"
+    }
+  },
+  "about": {
+    "title": "关于 Marka",
+    "headline": "为文字匠人而生。",
+    "subheadline": "Marka 的诞生源于对纯粹的追求。我们渴望一个让软件退居幕后的环境，只留下你和你的思考。",
+    "valuesTitle": "我们的愿景",
+    "timelineTitle": "成长之路",
+    "quote": "减少干扰，让写作重归本质。",
+    "manifesto": "Marka 宣言",
+    "openSourceTitle": "开源社区",
+    "openSourceDesc": "Marka 在 MIT 协议下开源。我们相信优秀的软件应该是透明、可审计且由社区驱动的。",
+    "footer": "由 Marka 团队倾情打造 ❤️"
+  },
+  "docs": {
+    "search": "搜索文档...",
+    "noResults": "未找到相关结果：",
+    "previous": "上一页",
+    "next": "下一页",
+    "onThisPage": "本页目录"
+  }
+}
