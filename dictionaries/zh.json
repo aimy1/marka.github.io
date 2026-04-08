@@ -49,6 +49,12 @@
     "github": "在 GitHub 上关注",
     "footer": "永久免费 · 开放源代码 · 无需注册账号"
   },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "找不到您要查看的内容。它可能已移动或从未存在过。",
+    "goHome": "回首页",
+    "readDocs": "查看文档"
+  },
   "download": {
     "badge": "v3.3.7 — 最新稳定版",
     "title": "下载 Marka",

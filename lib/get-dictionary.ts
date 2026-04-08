@@ -5,5 +5,7 @@ const dictionaries = {
   zh: () => import("../dictionaries/zh.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: "en" | "zh") =>
+export type Dictionary = typeof import("../dictionaries/en.json");
+
+export const getDictionary = async (locale: "en" | "zh"): Promise<Dictionary> =>
   dictionaries[locale]();
