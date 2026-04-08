@@ -1,4 +1,3 @@
-import { DocsSidebar } from "@/components/DocsSidebar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
